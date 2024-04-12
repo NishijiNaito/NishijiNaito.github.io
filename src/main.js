@@ -2,6 +2,9 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import JsonCSV from 'vue-json-csv'
+
+
 
 import App from './App.vue'
 import router from './router'
@@ -19,5 +22,5 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router).use(VueSweetalert)
-
+app.component('downloadCsv', JsonCSV)
 app.mount('#app')

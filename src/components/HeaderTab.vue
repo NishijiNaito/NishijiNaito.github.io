@@ -90,7 +90,6 @@
               tabindex="-1"
               aria-label="Show notifications"
             >
-              <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon"
@@ -123,13 +122,12 @@
                     <div class="row align-items-center">
                       <div class="col-auto">
                         <span
-                          class="status-dot status-dot-animated bg-red d-block"
+                          class="status-dot status-dot-animated bg-green d-block"
                         ></span>
                       </div>
                       <div class="col text-truncate">
                         <div class="d-block text-body mt-n1">
-                          ปัจจุบัน ยังทำไม่เสร็จสักอันเลย <br />
-                          พึ่งสร้างมาใหม่น่ะนะ โอเค๊
+                          D&D D20 Scoring Page
                         </div>
                       </div>
                     </div>
@@ -287,7 +285,7 @@
       </div>
     </div>
   </header>
-  <header class="navbar-expand-md">
+  <header class="navbar-expand-md mb-5">
     <div class="collapse navbar-collapse" id="navbar-menu">
       <div class="navbar">
         <div class="container-xl">
@@ -323,6 +321,29 @@
                       @click="$router.push('/foundryvtt/token-swap')"
                     >
                       Token Swap Creator
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#navbar-third"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                      <i class="far fa-user-circle"></i>
+                    </span>
+                    <span class="nav-link-title"> D&D </span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a
+                      class="dropdown-item"
+                      @click="$router.push('/dnd/d20scoring')"
+                    >
+                      D20 Scoring
                     </a>
                   </div>
                 </li>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row justify-content-center mt-5">
-      <div class="col-md-6 text-center">
+      <div class="col-lg-6 text-center">
         ขอต้อนรับเข้าสู่เว็บไซต์อรรถประโยชน์ของ Nishiji Naito ครับ
         <br />
         <br />
@@ -16,6 +16,18 @@
         <br />
         เดี๋ยวผมก็น่าจะทำไปเรื่อยๆ แหละครับ ตราบใดที่คิดออก
         <div class="text-end mt-3">ขอให้ใช้ให้สนุกนะครับ<br />Naito</div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-6">
+        อัปเดตล่าสุด
+        <br />
+        เพิ่มเมนู D20 Scoring ใช้สำหรับบันทึกข้อมูลการทอยทั้งหมด
+        <br /><br />
+        อัปเดตต่อไป
+        <br />
+        เพิ่มเมนู Token Swap Creator ใช้สำหรับคัดลอกไฟล์ Javascript เพื่อเปลี่ยน
+        Token ใน Scene ของ Foundry Vtt
       </div>
     </div>
   </div>
