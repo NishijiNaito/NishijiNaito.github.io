@@ -347,6 +347,29 @@
                     </a>
                   </div>
                 </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#navbar-third"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    <span class="nav-link-icon d-md-none d-lg-inline-block">
+                      <i class="far fa-tasks-alt"></i>
+                    </span>
+                    <span class="nav-link-title"> Utility </span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a
+                      class="dropdown-item"
+                      @click="$router.push('/utility/discordoverlay')"
+                    >
+                      Discord Overlay
+                    </a>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="col-3 d-none d-xxl-block">

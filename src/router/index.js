@@ -16,6 +16,17 @@ const router = createRouter({
           path: 'd20scoring',
           name: 'd20scoring',
           component: () => import('@/views/D20ScoringView.vue')
+          // component: () => import('@/views/utility/DiscordOverlayView.vue')
+        }
+      ]
+    },
+    {
+      path: '/utility',
+      children: [
+        {
+          path: 'discordoverlay',
+          name: 'discordoverlay',
+          component: () => import('@/views/utility/DiscordOverlayView.vue')
         }
       ]
     },
