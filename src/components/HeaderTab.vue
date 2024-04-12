@@ -311,7 +311,7 @@
                     aria-expanded="false"
                   >
                     <span class="nav-link-icon d-md-none d-lg-inline-block">
-                      <i class="far fa-user-circle"></i>
+                      <i class="far fa-dice-d20"></i>
                     </span>
                     <span class="nav-link-title"> Foundry VTT Script </span>
                   </a>
@@ -334,14 +334,14 @@
                     aria-expanded="false"
                   >
                     <span class="nav-link-icon d-md-none d-lg-inline-block">
-                      <i class="far fa-user-circle"></i>
+                      <i class="far fa-swords"></i>
                     </span>
-                    <span class="nav-link-title"> D&D </span>
+                    <span class="nav-link-title"> TRPG </span>
                   </a>
                   <div class="dropdown-menu">
                     <a
                       class="dropdown-item"
-                      @click="$router.push('/dnd/d20scoring')"
+                      @click="$router.push('/trpg/d20scoring')"
                     >
                       D20 Scoring
                     </a>

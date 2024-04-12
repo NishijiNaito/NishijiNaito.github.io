@@ -10,7 +10,7 @@ const router = createRouter({
       component: () => import('@/views/HomeView.vue')
     },
     {
-      path: '/dnd',
+      path: '/trpg',
       children: [
         {
           path: 'd20scoring',
