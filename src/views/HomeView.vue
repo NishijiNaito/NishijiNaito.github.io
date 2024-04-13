@@ -22,18 +22,20 @@
       <div class="col-lg-6">
         อัปเดตล่าสุด
         <br />
-        เพิ่มเมนู Utility > Discord Overlay ใช้สำหรับสร้างไฟล์ CSS สำหรับใช้ใน
-        OBS ของ Discord
-
+        - เพิ่มเมนู Foundry VTT Script > Token Swap Creator สำหรับการ Generate
+        Script สำหรับการเปลี่ยน Token ของแต่ละบุคคล
         <br /><br />
         อัปเดตต่อไป
         <br />
-        เพิ่มเมนู Token Swap Creator ใช้สำหรับคัดลอกไฟล์ Javascript เพื่อเปลี่ยน
-        Token ใน Scene ของ Foundry Vtt (ซึ่งชั้นควรทำก่อน แต่ดันเพลินจนลืม)
+        - ไม่รู้ ยังคิดไม่ออก
+
         <br /><br />
         อัปเดตก่อนหน้านี้
         <br />
         เพิ่มเมนู TRPG > D20 Scoring ใช้สำหรับบันทึกข้อมูลการทอยทั้งหมด
+        <br />
+        - เพิ่มเมนู Utility > Discord Overlay ใช้สำหรับสร้างไฟล์ CSS สำหรับใช้ใน
+        - OBS ของ Discord
       </div>
     </div>
   </div>

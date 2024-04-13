@@ -19,6 +19,16 @@ const router = createRouter({
           // component: () => import('@/views/utility/DiscordOverlayView.vue')
         }
       ]
+    }, {
+      path: '/foundryvtt',
+      children: [
+        {
+          path: 'token-swap',
+          name: 'token-swap',
+          component: () => import('@/views/fovttscr/TokenSwapView.vue')
+          // component: () => import('@/views/utility/DiscordOverlayView.vue')
+        }
+      ]
     },
     {
       path: '/utility',
