@@ -48,6 +48,28 @@
                     placeholder="Picture Link"
                     required
                   />
+                  <label class="form-check form-check-inline mt-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      v-model="dc.haveSpeakPic"
+                    />
+                    <span class="form-check-label">Have Speak State Pic ?</span>
+                  </label>
+                  <br v-if="dc.haveSpeakPic" />
+                  <label v-if="dc.haveSpeakPic" :for="'plsip_' + idx"
+                    >Picture Speak Link</label
+                  >
+                  <input
+                    v-if="dc.haveSpeakPic"
+                    type="url"
+                    class="form-control"
+                    :id="'plsip_' + idx"
+                    v-model="dc.picturespeaklink"
+                    aria-describedby="helpId"
+                    placeholder="Picture Speak Link"
+                    required
+                  />
                 </div>
               </div>
             </div>
@@ -86,6 +108,8 @@ export default {
         {
           disuserid: "",
           picturelink: "",
+          haveSpeakPic: false,
+          picturespeaklink: "",
         },
       ],
       csscode: "",
@@ -96,6 +120,8 @@ export default {
       this.dc_list.push({
         disuserid: "",
         picturelink: "",
+        haveSpeakPic: false,
+        picturespeaklink: "",
       });
     },
     generateCss() {
@@ -106,7 +132,12 @@ export default {
             p +
             t.forplayer
               .replaceAll("disuserid", n.disuserid)
-              .replaceAll("picturelink", n.picturelink)
+              .replaceAll("picturelink", n.picturelink) +
+            (n.haveSpeakPic
+              ? t.forhavespeak
+                  .replaceAll("disuserid", n.disuserid)
+                  .replaceAll("picturespeaklink", n.picturespeaklink)
+              : "")
           );
         }, "");
     },

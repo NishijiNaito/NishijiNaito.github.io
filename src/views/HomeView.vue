@@ -22,8 +22,8 @@
       <div class="col-lg-6">
         อัปเดตล่าสุด
         <br />
-        - เพิ่มเมนู Foundry VTT Script > Token Swap Creator สำหรับการ Generate
-        Script สำหรับการเปลี่ยน Token ของแต่ละบุคคล
+        - เพิ่ม Picture Speak ของ Discord เพื่อให้สามารถแสดงรูปภาพตอนพูดได้
+        (แต่ถ้าไม่ใช้ จะเอาตามรูปหลักที่ตั้งไว้ตามปกติ)
         <br /><br />
         อัปเดตต่อไป
         <br />
@@ -32,10 +32,12 @@
         <br /><br />
         อัปเดตก่อนหน้านี้
         <br />
-        เพิ่มเมนู TRPG > D20 Scoring ใช้สำหรับบันทึกข้อมูลการทอยทั้งหมด
+        - เพิ่มเมนู TRPG > D20 Scoring ใช้สำหรับบันทึกข้อมูลการทอยทั้งหมด
         <br />
         - เพิ่มเมนู Utility > Discord Overlay ใช้สำหรับสร้างไฟล์ CSS สำหรับใช้ใน
-        - OBS ของ Discord
+        <br />
+        - OBS ของ Discord - เพิ่มเมนู Foundry VTT Script > Token Swap Creator
+        สำหรับการ Generate Script สำหรับการเปลี่ยน Token ของแต่ละบุคคล
       </div>
     </div>
   </div>
