@@ -185,14 +185,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(s, idx) in record_detail.stats" :key="idx">
-                <td>{{ idx + 1 }}</td>
+              <tr v-for="(s, idx) in stats_rev" :key="idx">
+                <td>{{ stats_rev.length - idx }}</td>
                 <td>{{ s.player }}</td>
                 <td class="text-end">{{ s.score }}</td>
                 <td>
                   <button
                     type="button"
-                    @click="deleteScore(idx)"
+                    @click="deleteScore(stats_rev.length - idx - 1)"
                     class="btn btn-danger"
                   >
                     <i class="fa fa-trash" aria-hidden="true"></i>
@@ -223,6 +223,12 @@ export default {
       hidePlayer: true,
       record_imp: "",
     };
+  },
+  computed: {
+    stats_rev() {
+      let dat = [...this.record_detail.stats];
+      return dat.reverse();
+    },
   },
   mounted() {
     let rec_list = JSON.parse(localStorage.getItem("records_list"));
