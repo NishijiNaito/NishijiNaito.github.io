@@ -1,10 +1,11 @@
-import{_ as m,c as i,b as a,i as u,w as g,F as h,e as b,d as o,v as d,o as s,t as f,f as k,k as y,l as p}from"./index-D6-23Et-.js";const x=`html {
+import{_ as m,c as i,b as a,i as u,w as g,F as h,e as b,d as _,v as c,o,t as f,f as k,k as y,l as p}from"./index-CUam1Evl.js";const x=`html {
   --body_vertical_align: bottom;
   --body_vertical_align: middle;
   --body_vertical_align: top;
   --body_horizontal_align: right;
   --body_horizontal_align: center;
   --body_horizontal_align: left;
+
 
 
   --voice_states_margin_top: 6px;
@@ -14,9 +15,11 @@ import{_ as m,c as i,b as a,i as u,w as g,F as h,e as b,d as o,v as d,o as s,t a
   --voice_states_margin_right: 6px;
 
 
+
   --voice_state_margin_bottom: 6px;
   --voice_state_margin_right: 6px;
   --voice_state_display: inline-block;
+
 
 
   --avatar_height: 128px;
@@ -33,11 +36,14 @@ import{_ as m,c as i,b as a,i as u,w as g,F as h,e as b,d as o,v as d,o as s,t a
   --avatar_filter: brightness(60%);
 
 
+
   --speaking_avatar_border_colour: #43b581;
   --speaking_avatar_filter: brightness(100%);
 
 
+
   --user_float_side: left;
+
 
 
   --username_font_color: rgb(255, 255, 255);
@@ -59,11 +65,14 @@ import{_ as m,c as i,b as a,i as u,w as g,F as h,e as b,d as o,v as d,o as s,t a
   --username_margin_left: calc((-1 * var(--username_max_width, 0)) - (var(--avatar_width_including_border) + (-1 * var(--username_max_width, 0))) / 2);
 
 
+
   --speaking_username_background_colour: rgba(30, 33, 36, 0.80);
+
 
 
   /*     recommended not to change */
   display: block;
+
 
 
   height: 100%;
@@ -95,12 +104,15 @@ import{_ as m,c as i,b as a,i as u,w as g,F as h,e as b,d as o,v as d,o as s,t a
 
 
 
+
 body {
   margin: 0;
 
 
+
   vertical-align: var(--body_vertical_align, baseline);
   text-align: var(--body_horizontal_align, left);
+
 
 
   /*     recommended not to change */
@@ -111,23 +123,28 @@ body {
 
 
 
+
 /* .voice-container .voice-states { */
 ul[class^="Voice_voiceStates"] {
   list-style-type: none;
   padding-left: 15px;
 
 
+
   margin-top: var(--voice_states_margin_top, 16px);
   margin-bottom: var(--voice_states_margin_bottom_including_voice_state_margin_bottom_adjusted, 16px);
+
 
 
   margin-left: var(--voice_states_margin_left, 0);
   margin-right: var(--voice_states_margin_right_including_voice_state_margin_right, 0);
 
 
+
   /*     recommended not to change */
   padding-left: var(--voice_states_padding_left, 15px);
 }
+
 
 
 
@@ -138,17 +155,21 @@ li[class^="Voice_voiceState"] {
   margin-bottom: 8px;
 
 
+
   height: var(--avatar_height_including_border, 50px);
   margin-bottom: var(--voice_state_margin_bottom_adjusted, 8px);
+
 
 
   margin-right: var(--voice_state_margin_right, 0);
   display: var(--voice_state_display, block);
 
 
+
   /*     recommended not to change */
   white-space: var(--voice_state_white_space, normal);
 }
+
 
 
 
@@ -161,6 +182,7 @@ img[class^="Voice_avatar"] {
   border-radius: 50%;
   float: left;
   margin-right: 8px;
+
 
 
   height: var(--avatar_height, 50px);
@@ -176,6 +198,7 @@ img[class^="Voice_avatar"] {
   float: var(--avatar_float_side, left);
 
 
+
   top: var(--avatar_start_top, auto);
   right: var(--avatar_start_right, auto);
   transition-property: var(--avatar_transition_property, all);
@@ -185,8 +208,10 @@ img[class^="Voice_avatar"] {
   filter: var(--avatar_filter, none);
 
 
+
   /*     recommended not to change */
   margin-right: var(--avatar_margin_right, 8px);
+
 
 
   position: var(--avatar_position, static);
@@ -196,12 +221,15 @@ img[class^="Voice_avatar"] {
 
 
 
+
 /* .voice-container .voice-states .voice-state .avatar.speaking { */
 img[class*="avatarSpeaking"] {
-  border-color: #43b581;
+  /* border-color: #43b581;
 
 
-  border-color: var(--speaking_avatar_border_colour, #43b581);
+
+  border-color: var(--speaking_avatar_border_colour, #43b581); */
+
 
 
   top: var(--avatar_end_top, auto);
@@ -211,20 +239,16 @@ img[class*="avatarSpeaking"] {
 
 
 
-
 /* .voice-container .voice-states .voice-state .user { */
 div[class^="Voice_user"] {
   padding-top: 18px;
 
-
   float: var(--user_float_side, none);
-
 
   /*     recommended not to change */
   padding-top: var(--user_padding_top, 18px);
   display: var(--user_display, block);
 }
-
 
 
 
@@ -234,13 +258,13 @@ span[class^="Voice_name"] {
   font-size: 14px;
   background-color: rgba(30, 33, 36, 0.95);
 
-
   color: var(--username_font_color) !important;
   font-size: var(--username_font_size, 14px) !important;
   background-color: var(--username_background_colour, rgba(30, 33, 36, 0.95)) !important;
   font-family: var(--username_font_family, Whitney);
   font-weight: var(--username_font_weight, 600);
   line-height: var(--username_font_line_height, 19px);
+
 
 
   width: calc(var(--username_width, auto) - 12px);
@@ -260,12 +284,9 @@ span[class^="Voice_name"] {
   margin-left: var(--username_margin_left, 0);
   margin-right: var(--username_margin_right, 0);
 
-
   /*     recommended not to change */
   overflow: var(--username_overflow, visible);
 }
-
-
 
 
 /* .voice-container .voice-states .voice-state .avatar.speaking + .user .name { */
@@ -278,15 +299,12 @@ li[class^="Voice_voiceState"]>div>span {
   visibility: hidden;
 }
 
-
-
+`,w=`
 li[class^="Voice_voiceState"] {
   display: none;
 }
 
-
-
-`,w=`ul>li[class^="Voice_voiceState"][data-userid*="disuserid"] {
+`,S=`ul>li[class^="Voice_voiceState"][data-userid*="disuserid"] {
   display: var(--voice_state_display, block);
 }
 
@@ -299,11 +317,11 @@ img[class^="Voice_avatar"][src*="disuserid"] {
 
 
 
-`,S=`img[class*="avatarSpeaking"][src*="disuserid"] {
+`,V=`img[class*="avatarSpeaking"][src*="disuserid"] {
   object-fit: cover;
   object-position: 100% 0;
   content: url('picturespeaklink');
 }
 
-`,c={first:x,forplayer:w,forhavespeak:S},V={data(){return{t:c,dc_list:[{disuserid:"",picturelink:"",haveSpeakPic:!1,picturespeaklink:""}],csscode:""}},methods:{addList(){this.dc_list.push({disuserid:"",picturelink:"",haveSpeakPic:!1,picturespeaklink:""})},generateCss(){this.csscode=c.first+this.dc_list.reduce((l,e)=>l+c.forplayer.replaceAll("disuserid",e.disuserid).replaceAll("picturelink",e.picturelink)+(e.haveSpeakPic?c.forhavespeak.replaceAll("disuserid",e.disuserid).replaceAll("picturespeaklink",e.picturespeaklink):""),"")},toCopy(){navigator.clipboard.writeText(this.csscode)}}},C={class:"row justify-content-center g-3"},P={class:"col-lg-5"},z={class:"card"},j={class:"card-header"},U={class:"card-actions btn-actions"},D=a("i",{class:"fas fa-plus fa-lg text-success"},null,-1),L=[D],I={class:"card-body"},A={type:"submit",ref:"cssf",hidden:""},q={class:"card-header"},B={class:"card-title"},F={class:"card-actions btn-actions"},M=["onClick"],N=a("i",{class:"fas fa-times fa-lg text-danger"},null,-1),T=[N],W={class:"card-body"},$={class:"form-group"},E=["for"],G=["id","onUpdate:modelValue"],H=["for"],O=["id","onUpdate:modelValue"],J={class:"form-check form-check-inline mt-2"},K=["onUpdate:modelValue"],Q=a("span",{class:"form-check-label"},"Have Speak State Pic ?",-1),R={key:0},X=["for"],Y=["id","onUpdate:modelValue"],Z={class:"col-lg-7"},aa={class:"card"},ta={class:"card-header"},ea={class:"card-actions"},na={class:"card-body"};function ra(l,e,ia,oa,_,v){return s(),i("div",C,[a("div",P,[a("div",z,[a("div",j,[u(" List "),a("div",U,[a("button",{onClick:e[0]||(e[0]=t=>v.addList()),class:"btn-action"},L)])]),a("div",I,[a("form",{onSubmit:e[1]||(e[1]=g(t=>v.generateCss(),["prevent"]))},[a("button",A,"submit",512),(s(!0),i(h,null,b(_.dc_list,(t,n)=>(s(),i("div",{class:"card mb-3",key:n},[a("div",q,[a("h3",B,"Discord Info "+f(n+1),1),o(a("div",F,[a("button",{onClick:r=>_.dc_list.splice(n,1),class:"btn-action"},T,8,M)],512),[[k,_.dc_list.length>1]])]),a("div",W,[a("div",$,[a("label",{for:"dcip_"+n},"Discord ID",8,E),o(a("input",{type:"text",class:"form-control mb-1",id:"dcip_"+n,"onUpdate:modelValue":r=>t.disuserid=r,"aria-describedby":"helpId",placeholder:"Discord ID",required:""},null,8,G),[[d,t.disuserid]]),a("label",{for:"plip_"+n},"Picture Link",8,H),o(a("input",{type:"url",class:"form-control",id:"plip_"+n,"onUpdate:modelValue":r=>t.picturelink=r,"aria-describedby":"helpId",placeholder:"Picture Link",required:""},null,8,O),[[d,t.picturelink]]),a("label",J,[o(a("input",{class:"form-check-input",type:"checkbox","onUpdate:modelValue":r=>t.haveSpeakPic=r},null,8,K),[[y,t.haveSpeakPic]]),Q]),t.haveSpeakPic?(s(),i("br",R)):p("",!0),t.haveSpeakPic?(s(),i("label",{key:1,for:"plsip_"+n},"Picture Speak Link",8,X)):p("",!0),t.haveSpeakPic?o((s(),i("input",{key:2,type:"url",class:"form-control",id:"plsip_"+n,"onUpdate:modelValue":r=>t.picturespeaklink=r,"aria-describedby":"helpId",placeholder:"Picture Speak Link",required:""},null,8,Y)),[[d,t.picturespeaklink]]):p("",!0)])])]))),128))],32)])])]),a("div",Z,[a("div",aa,[a("div",ta,[u(" CSS File "),a("div",ea,[a("button",{onClick:e[2]||(e[2]=t=>v.toCopy()),class:"btn btn-info me-2"},"Copy"),a("button",{onClick:e[3]||(e[3]=t=>l.$refs.cssf.click()),class:"btn btn-primary"}," Generate CSS ")])]),a("div",na,[o(a("textarea",{class:"form-control",rows:"15","onUpdate:modelValue":e[4]||(e[4]=t=>_.csscode=t),readonly:""},`\r
-          `,512),[[d,_.csscode]])])])])])}const _a=m(V,[["render",ra]]);export{_a as default};
+`,d={first:x,haveplayer:w,forplayer:S,forhavespeak:V},C={data(){return{t:d,dc_list:[],csscode:""}},methods:{addList(){this.dc_list.push({disuserid:"",picturelink:"",haveSpeakPic:!1,picturespeaklink:""})},generateCss(){this.csscode=d.first+this.dc_list.reduce((l,n)=>l+d.forplayer.replaceAll("disuserid",n.disuserid).replaceAll("picturelink",n.picturelink)+(n.haveSpeakPic?d.forhavespeak.replaceAll("disuserid",n.disuserid).replaceAll("picturespeaklink",n.picturespeaklink):""),""),this.dc_list.length>=1&&(this.csscode+=d.haveplayer)},toCopy(){navigator.clipboard.writeText(this.csscode)}}},z={class:"row justify-content-center g-3"},P={class:"col-lg-5"},j={class:"card"},U={class:"card-header"},D={class:"card-actions btn-actions"},L=a("i",{class:"fas fa-plus fa-lg text-success"},null,-1),I=[L],A={class:"card-body"},q={type:"submit",ref:"cssf",hidden:""},B={key:0},F={class:"card-header"},M={class:"card-title"},N={class:"card-actions btn-actions"},T=["onClick"],W=a("i",{class:"fas fa-times fa-lg text-danger"},null,-1),E=[W],G={class:"card-body"},H={class:"form-group"},O=["for"],$=["id","onUpdate:modelValue"],J=["for"],K=["id","onUpdate:modelValue"],Q={class:"form-check form-check-inline mt-2"},R=["onUpdate:modelValue"],X=a("span",{class:"form-check-label"},"Have Speak State Pic ?",-1),Y={key:0},Z=["for"],aa=["id","onUpdate:modelValue"],ta={key:1,class:"card mb-3"},na=a("div",{class:"card-body text-center"}," Show All User ",-1),ea=[na],ra={class:"col-lg-7"},ia={class:"card"},oa={class:"card-header"},sa={class:"card-actions"},_a={class:"card-body"};function da(l,n,ca,la,s,v){return o(),i("div",z,[a("div",P,[a("div",j,[a("div",U,[u(" List "),a("div",D,[a("button",{onClick:n[0]||(n[0]=t=>v.addList()),class:"btn-action"},I)])]),a("div",A,[a("form",{onSubmit:n[1]||(n[1]=g(t=>v.generateCss(),["prevent"]))},[a("button",q,"submit",512),s.dc_list.length>0?(o(),i("div",B,[(o(!0),i(h,null,b(s.dc_list,(t,e)=>(o(),i("div",{class:"card mb-3",key:e},[a("div",F,[a("h3",M,"Discord Info "+f(e+1),1),_(a("div",N,[a("button",{onClick:r=>s.dc_list.splice(e,1),class:"btn-action"},E,8,T)],512),[[k,s.dc_list.length>1||!0]])]),a("div",G,[a("div",H,[a("label",{for:"dcip_"+e},"Discord ID",8,O),_(a("input",{type:"text",class:"form-control mb-1",id:"dcip_"+e,"onUpdate:modelValue":r=>t.disuserid=r,"aria-describedby":"helpId",placeholder:"Discord ID",required:""},null,8,$),[[c,t.disuserid]]),a("label",{for:"plip_"+e},"Picture Link",8,J),_(a("input",{type:"url",class:"form-control",id:"plip_"+e,"onUpdate:modelValue":r=>t.picturelink=r,"aria-describedby":"helpId",placeholder:"Picture Link",required:""},null,8,K),[[c,t.picturelink]]),a("label",Q,[_(a("input",{class:"form-check-input",type:"checkbox","onUpdate:modelValue":r=>t.haveSpeakPic=r},null,8,R),[[y,t.haveSpeakPic]]),X]),t.haveSpeakPic?(o(),i("br",Y)):p("",!0),t.haveSpeakPic?(o(),i("label",{key:1,for:"plsip_"+e},"Picture Speak Link",8,Z)):p("",!0),t.haveSpeakPic?_((o(),i("input",{key:2,type:"url",class:"form-control",id:"plsip_"+e,"onUpdate:modelValue":r=>t.picturespeaklink=r,"aria-describedby":"helpId",placeholder:"Picture Speak Link",required:""},null,8,aa)),[[c,t.picturespeaklink]]):p("",!0)])])]))),128))])):(o(),i("div",ta,ea))],32)])])]),a("div",ra,[a("div",ia,[a("div",oa,[u(" CSS File "),a("div",sa,[a("button",{onClick:n[2]||(n[2]=t=>v.toCopy()),class:"btn btn-info me-2"},"Copy"),a("button",{onClick:n[3]||(n[3]=t=>l.$refs.cssf.click()),class:"btn btn-primary"}," Generate CSS ")])]),a("div",_a,[_(a("textarea",{class:"form-control",rows:"15","onUpdate:modelValue":n[4]||(n[4]=t=>s.csscode=t),readonly:""},`\r
+          `,512),[[c,s.csscode]])])])])])}const pa=m(C,[["render",da]]);export{pa as default};

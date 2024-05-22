@@ -1,4 +1,4 @@
-import{_ as m,c as d,b as e,i as b,w as f,F as h,e as v,d as i,v as u,o as _,t as y,f as k}from"./index-D6-23Et-.js";const g=`let image = [
+import{_ as m,c as d,b as e,i as b,w as f,F as h,e as v,d as i,v as u,o as _,t as y,f as k}from"./index-CUam1Evl.js";const g=`let image = [
   arr_images
 ];
 
