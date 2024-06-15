@@ -37,6 +37,11 @@ const router = createRouter({
           path: 'discordoverlay',
           name: 'discordoverlay',
           component: () => import('@/views/utility/DiscordOverlayView.vue')
+        },
+        {
+          path: 'discordoverlayone',
+          name: 'discordoverlayone',
+          component: () => import('@/views/utility/DiscordOverlayForOneView.vue')
         }
       ]
     },

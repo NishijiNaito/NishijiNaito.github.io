@@ -1,20 +1,11 @@
 <template>
   <header class="navbar navbar-expand-md d-print-none">
     <div class="container-xl">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbar-menu"
-        aria-controls="navbar-menu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+        aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <h1
-        class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3"
-      >
+      <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
         <router-link to="/">
           <!-- <img
             src="./static/logo-small.svg"
@@ -83,36 +74,16 @@
         </div> -->
         <div class="d-none d-md-flex">
           <div class="nav-item dropdown d-none d-md-flex me-3">
-            <a
-              href="#"
-              class="nav-link px-0"
-              data-bs-toggle="dropdown"
-              tabindex="-1"
-              aria-label="Show notifications"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+            <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
-                ></path>
+                <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
                 <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
               </svg>
               <span class="badge bg-red"></span>
             </a>
-            <div
-              class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card"
-            >
+            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
               <div class="card">
                 <div class="card-header">
                   <h3 class="card-title">อัปเดตล่าสุด</h3>
@@ -121,9 +92,7 @@
                   <div class="list-group-item">
                     <div class="row align-items-center">
                       <div class="col-auto">
-                        <span
-                          class="status-dot status-dot-animated bg-green d-block"
-                        ></span>
+                        <span class="status-dot status-dot-animated bg-green d-block"></span>
                       </div>
                       <div class="col text-truncate">
                         <div class="d-block text-body mt-n1">
@@ -250,7 +219,8 @@
                       </div>
                     </div>
                   </div> 
-                --></div>
+                -->
+                </div>
               </div>
             </div>
           </div>
@@ -302,114 +272,69 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#navbar-third"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside"
-                    role="button"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#navbar-third" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside" role="button" aria-expanded="false">
                     <span class="nav-link-icon d-md-none d-lg-inline-block">
                       <i class="far fa-dice-d20"></i>
                     </span>
                     <span class="nav-link-title"> Foundry VTT Script </span>
                   </a>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      @click="$router.push('/foundryvtt/token-swap')"
-                    >
+                    <a class="dropdown-item" @click="$router.push('/foundryvtt/token-swap')">
                       Token Swap Creator
                     </a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#navbar-third"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside"
-                    role="button"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#navbar-third" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside" role="button" aria-expanded="false">
                     <span class="nav-link-icon d-md-none d-lg-inline-block">
                       <i class="far fa-swords"></i>
                     </span>
                     <span class="nav-link-title"> TRPG </span>
                   </a>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      @click="$router.push('/trpg/d20scoring')"
-                    >
+                    <a class="dropdown-item" @click="$router.push('/trpg/d20scoring')">
                       D20 Scoring
                     </a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#navbar-third"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside"
-                    role="button"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#navbar-third" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside" role="button" aria-expanded="false">
                     <span class="nav-link-icon d-md-none d-lg-inline-block">
                       <i class="far fa-tasks-alt"></i>
                     </span>
                     <span class="nav-link-title"> Utility </span>
                   </a>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      @click="$router.push('/utility/discordoverlay')"
-                    >
+                    <a class="dropdown-item" @click="$router.push('/utility/discordoverlay')">
                       Discord Overlay
                     </a>
+                    <a class="dropdown-item" @click="$router.push('/utility/discordoverlayone')">
+                      Discord Overlay (1 Person)
+                    </a>
                   </div>
+
                 </li>
               </ul>
             </div>
             <div class="col-3 d-none d-xxl-block">
-              <div
-                class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last"
-              >
+              <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
                 <form action="./" method="get" autocomplete="off" novalidate="">
                   <div class="input-icon">
                     <span class="input-icon-addon">
                       <!-- Download SVG icon from http://tabler-icons.io/i/search -->
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="icon"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path
-                          stroke="none"
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        ></path>
-                        <path
-                          d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"
-                        ></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
                         <path d="M21 21l-6 -6"></path>
                       </svg>
                     </span>
-                    <input
-                      type="text"
-                      value=""
-                      class="form-control"
-                      placeholder="Search ทำแมวอะไร ไม่ให้ค้นโว้ยยยย"
-                      aria-label="Search in website"
-                    />
+                    <input type="text" value="" class="form-control" placeholder="Search ทำแมวอะไร ไม่ให้ค้นโว้ยยยย"
+                      aria-label="Search in website" />
                   </div>
                 </form>
               </div>
@@ -422,11 +347,11 @@
 </template>
 
 <script>
-export default {};
+  export default {};
 </script>
 
 <style scoped>
-a {
-  cursor: pointer;
-}
+  a {
+    cursor: pointer;
+  }
 </style>
