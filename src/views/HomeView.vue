@@ -22,8 +22,7 @@
       <div class="col-lg-6">
         อัปเดตล่าสุด
         <br />
-        - เพิ่ม Picture Speak ของ Discord เพื่อให้สามารถแสดงรูปภาพตอนพูดได้
-        (แต่ถ้าไม่ใช้ จะเอาตามรูปหลักที่ตั้งไว้ตามปกติ)
+        - Token Swap Creator เพิ่ม script สำหรับ Foundry Version 12
         <br /><br />
         อัปเดตต่อไป
         <br />
@@ -38,6 +37,9 @@
         <br />
         - OBS ของ Discord - เพิ่มเมนู Foundry VTT Script > Token Swap Creator
         สำหรับการ Generate Script สำหรับการเปลี่ยน Token ของแต่ละบุคคล
+        <br />
+        - เพิ่ม Picture Speak ของ Discord เพื่อให้สามารถแสดงรูปภาพตอนพูดได้
+        (แต่ถ้าไม่ใช้ จะเอาตามรูปหลักที่ตั้งไว้ตามปกติ)
       </div>
     </div>
   </div>

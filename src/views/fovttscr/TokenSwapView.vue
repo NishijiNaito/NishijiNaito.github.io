@@ -4,6 +4,15 @@
       <div class="card">
         <div class="card-header">
           Token List
+          <div class="form-group ms-5">
+            <select
+              id="my-select"
+              class="form-select"
+              v-model="foundry_version">
+              <option value="v_11">Foundry Version 11</option>
+              <option value="v_12">Foundry Version 12</option>
+            </select>
+          </div>
           <div class="card-actions btn-actions">
             <button @click="addList()" class="btn-action">
               <i class="fas fa-plus fa-lg text-success"></i>
@@ -19,8 +28,7 @@
                 <h3 class="card-title">Token Info {{ idx + 1 }}</h3>
                 <div
                   class="card-actions btn-actions"
-                  v-show="pic_list.length > 1"
-                >
+                  v-show="pic_list.length > 1">
                   <button @click="pic_list.splice(idx, 1)" class="btn-action">
                     <i class="fas fa-times fa-lg text-danger"></i>
                   </button>
@@ -36,8 +44,7 @@
                     v-model="pl.i_label"
                     aria-describedby="helpId"
                     placeholder="Label"
-                    required
-                  />
+                    required />
                   <label :for="'urlip_' + idx">Token Link</label>
                   <input
                     type="url"
@@ -46,8 +53,7 @@
                     v-model="pl.i_url"
                     aria-describedby="helpId"
                     placeholder="Token Link"
-                    required
-                  />
+                    required />
                 </div>
               </div>
             </div>
@@ -71,8 +77,7 @@
             class="form-control"
             rows="15"
             v-model="scriptcode"
-            readonly
-          >
+            readonly>
           </textarea>
         </div>
       </div>
@@ -94,6 +99,7 @@ export default {
         },
       ],
       scriptcode: "",
+      foundry_version: "v_11",
     };
   },
   methods: {
@@ -116,7 +122,7 @@ export default {
         );
       }, "");
 
-      this.scriptcode = t.main
+      this.scriptcode = t[this.foundry_version]
         .replaceAll("arr_images", inarray)
         .replaceAll("\n", "");
     },
