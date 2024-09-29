@@ -1,1 +1,0 @@
-import{_ as e,c as s,o,b as t}from"./index-C5_HVY5f.js";const c={},n={id:"pagenotfound",class:"mt-5"},a=t("h1",{class:"text-center mb-5"},"404",-1),_=t("h1",{class:"text-center"},"ไม่พบหน้าที่ร้องขอ",-1),r=[a,_];function d(i,p,f,h,l,m){return o(),s("div",n,r)}const x=e(c,[["render",d]]);export{x as default};
